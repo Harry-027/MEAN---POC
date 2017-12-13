@@ -1,0 +1,27 @@
+<br>
+<br> <br>
+<form class="col-md-12">
+  <div class="col-md-12 col-sm-12">
+    <div class="form-group">
+      <label for="name">Name*</label>
+      <input type="text" class="form-control input-sm" name="name" placeholder="Enter your name here" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email*</label>
+      <input type="email" class="form-control input-sm" name="email" placeholder="Email Id" [(ngModel)]="email">
+    </div>
+    <div class="form-group">
+      <label for="mobile">Password*</label>
+      <input type="password" class="form-control input-sm" name="password" placeholder="password" [(ngModel)]="password">
+    </div>
+    <div class="form-group">
+      <input class="btn btn-primary" type="button" value="Submit" style="float: right" (click)='submission()' />
+    </div>
+  </div>
+</form>
+
+
+<div class="container">
+  <span class="col-md-12" >{{msg}}</span>
+    <input class="btn btn-primary" type="button" *ngIf="isTrue" value="Validate Token" (click)='validateToken()' />
+</div>
